@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/StanDobrev11/02-Student-Registry-App-Docker', branch: 'master'
+                checkout scm
             }
         }
 
